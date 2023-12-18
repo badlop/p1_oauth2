@@ -145,7 +145,7 @@ refresh_token(Response, NewRefreshToken) ->
     Response#response{refresh_token = NewRefreshToken}.
 
 -spec refresh_token_expires_in(response()) -> {ok, lifetime()} | {error, not_set}.
-refresh_token_expires_in(#response{refresh_token = undefined})    ->
+refresh_token_expires_in(#response{refresh_token_expires_in = undefined})    ->
     {error, not_set};
 refresh_token_expires_in(#response{refresh_token_expires_in = RefreshTokenExpiresIn}) ->
     {ok, RefreshTokenExpiresIn}.
