@@ -1,3 +1,7 @@
+# Version 0.6.12
+
+* Proprely handle `undefined` values
+
 # Version 0.6.11
 
 * Generate documentation when generating hex.pm package
