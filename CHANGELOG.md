@@ -1,3 +1,7 @@
+# Version 0.6.13
+
+* Fix hex release process
+
 # Version 0.6.12
 
 * Proprely handle `undefined` values
